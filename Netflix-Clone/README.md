@@ -14,6 +14,22 @@ About This Course:
 -   🌐 Deployment
 -   🚀 And Many More Cool Features
 
+
+## 📁 Project Structure
+
+netflix-clone/
+├── backend/ # Express.js backend API
+├── frontend/ # React + Vite frontend app
+├── Dockerfile # Dockerfile for fullstack app
+├── .env # Environment variables (not committed)
+├── Jenkinsfile # CI/CD pipeline config for Jenkins
+├── k8s/ # Kubernetes manifests
+│ ├── deployment.yaml # K8s deployment config
+│ └── service.yaml # K8s service config
+└── README.md # Project documentation
+
+
+
 ### Setup .env file
 
 ```bash
@@ -28,42 +44,30 @@ TMDB_API_KEY=your_tmdb_api_key
 
 
 
-## 🧪 Run Locally with Docker
+### 🧪 Run Locally with Docker
 
+``` bash
 Make sure Docker is installed and running on your system.
+Ensure that the .env file is created in the backend or root folder before building the image:
 
----
-
-### 🐳 Step 1: Build the Docker Image
+ 🐳 Step 1: Build the Docker Image
 
 Run this command from your project root (where the Dockerfile is located):
-
-```bash
-docker build -t netflix-clone:latest .
+=> docker build -t netflix-clone:latest .
 
 
+🚀 Step 2: Run the Docker Container
+Expose both the backend and frontend ports:
+=> docker run -itd -p 5000:5000 -p 5173:5173 netflix-clone:latest
 
-```shell
-🐳 Docker Setup
 
-📦 Build Image Locally
+🌐 Step 3: Access the Application
 
-Install Docker and run:
+Backend API: http://localhost:5000
+Frontend UI: http://localhost:5173
+---
 
-docker build -t netflix-clone:latest .
 
-🚀 Run Locally
-
-docker run -itd -p 5000:5000 -p 5173:5173 netflix-clone:latest
-
-Then open:
-
-Backend: http://localhost:5000
-
-Frontend: http://localhost:5173
-```
-
-### Start the app
 
 ```shell
 npm run start
