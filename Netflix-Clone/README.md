@@ -83,4 +83,19 @@ Run this command to pull the image from Docker Hub:
 
 ```bash
 docker pull manish857/netflix-clone:latest
+```
 
+🚀 Step 2: Run the Docker Container
+
+Expose both the backend and frontend ports:
+```bash
+docker run -itd -p 5000:5000 -p 5173:5173 manish857/netflix-clone:latest
+```
+
+🌐 Step 3: Access the Application
+```bash
+
+Backend API: http://localhost:5000
+Frontend UI: http://localhost:5173
+
+```
