@@ -26,13 +26,47 @@ TMDB_API_KEY=your_tmdb_api_key
 
 ### Run this app locally
 
+
+
+## 🧪 Run Locally with Docker
+
+Make sure Docker is installed and running on your system.
+
+---
+
+### 🐳 Step 1: Build the Docker Image
+
+Run this command from your project root (where the Dockerfile is located):
+
+```bash
+docker build -t netflix-clone:latest .
+
+
+
 ```shell
-npm run build
+🐳 Docker Setup
+
+📦 Build Image Locally
+
+Install Docker and run:
+
+docker build -t netflix-clone:latest .
+
+🚀 Run Locally
+
+docker run -itd -p 5000:5000 -p 5173:5173 netflix-clone:latest
+
+Then open:
+
+Backend: http://localhost:5000
+
+Frontend: http://localhost:5173
 ```
 
 ### Start the app
 
 ```shell
 npm run start
+
 ```
 
