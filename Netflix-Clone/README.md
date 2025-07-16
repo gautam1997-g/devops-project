@@ -68,3 +68,19 @@ Backend API: http://localhost:5000
 Frontend UI: http://localhost:5173
 ```
 
+
+
+### 🧪 Run Locally with Docker Hub
+
+Make sure Docker is installed and running on your system.  
+Ensure that the `.env` file is created in the backend or root folder before running the container.
+
+---
+
+🐳 Step 1: Pull the Docker Image
+
+Run this command to pull the image from Docker Hub:
+
+```bash
+docker pull manish857/netflix-clone:latest
+
