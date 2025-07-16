@@ -17,6 +17,7 @@ About This Course:
 
 ## 📁 Project Structure
 
+```
 netflix-clone/
 ├── backend/ # Express.js backend API
 ├── frontend/ # React + Vite frontend app
@@ -27,7 +28,7 @@ netflix-clone/
 │ ├── deployment.yaml # K8s deployment config
 │ └── service.yaml # K8s service config
 └── README.md # Project documentation
-
+```
 
 
 ### Setup .env file
@@ -65,12 +66,5 @@ Expose both the backend and frontend ports:
 
 Backend API: http://localhost:5000
 Frontend UI: http://localhost:5173
----
-
-
-
-```shell
-npm run start
-
 ```
 
